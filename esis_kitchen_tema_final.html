@@ -175,7 +175,78 @@ textarea{resize:vertical}
 .bag-check{display:inline-flex;align-items:center;gap:5px;font-size:12px;cursor:pointer;margin-top:4px}
 .bag-check input{width:auto;padding:0;margin:0;cursor:pointer}
 .loc-done-btn{background:var(--primary);color:#fff;border:none;border-radius:var(--radius-sm);padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:10px;display:inline-flex;align-items:center;gap:6px}
-@media(max-width:500px){.page{padding:1.5rem 1rem}.hero{padding:2rem 1rem}.hero-brand{font-size:30px}nav{padding:.8rem 1rem}.plan-opts{grid-template-columns:1fr 1fr}}
+/* ============================================================
+   MOBILE RESPONSIVE - CSS ONLY, NO JS CHANGES
+   ============================================================ */
+
+/* Nav: make it scroll horizontally on small screens */
+@media(max-width:768px){
+  nav{padding:.6rem .75rem;gap:6px;overflow-x:auto}
+  .nav-links{flex-wrap:nowrap;overflow-x:auto;gap:2px;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+  .nav-links button{white-space:nowrap;padding:6px 10px;font-size:12px;flex-shrink:0}
+  .notice{font-size:11px;padding:6px .75rem}
+  .page{padding:1.25rem .75rem}
+  .hero{padding:2rem 1rem;border-radius:var(--radius-sm)}
+  .hero img{width:60px;height:60px}
+  .hero p{font-size:14px}
+  .btn-hw,.btn-ho{padding:10px 18px;font-size:13px}
+  .features{grid-template-columns:1fr 1fr}
+  .menu-grid{grid-template-columns:1fr 1fr}
+  .plan-opts{grid-template-columns:1fr 1fr}
+  .pay-methods{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .dash-stats{grid-template-columns:1fr 1fr}
+  .dash-header{flex-direction:column;align-items:flex-start;gap:8px}
+  .dash-header > div{flex-wrap:wrap;gap:6px;width:100%}
+  .order-table th,.order-table td{padding:6px 8px;font-size:12px}
+  .loc-card{padding:.875rem}
+  .loc-done-btn{width:100%;justify-content:center;margin-top:10px}
+  .login-box{margin:1.5rem auto;padding:1.5rem 1rem}
+  .about-card{padding:1.25rem}
+  .modal-overlay{padding:.5rem}
+  .modal{padding:1.25rem;max-height:92vh;overflow-y:auto}
+  .dash-tabs{flex-wrap:nowrap;overflow-x:auto}
+  .dash-tab{white-space:nowrap;flex-shrink:0}
+  .day-tabs{gap:6px}
+  .day-tab{padding:9px 14px;font-size:13px}
+  #toast{bottom:12px;right:10px;left:10px;max-width:none;text-align:center}
+  #summary-search,#history-search{max-width:100%!important}
+  .customer-summary-card{padding:1rem}
+  .week-table-wrap,.order-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .dash-section h3{font-size:15px}
+  .receipt-box{max-width:100%}
+  .hero-btns{flex-wrap:wrap;gap:8px}
+}
+
+@media(max-width:480px){
+  .hero-brand{font-size:26px!important}
+  .hero-branch{font-size:13px}
+  .hero p{font-size:13px}
+  .hero-btns{flex-direction:column}
+  .btn-hw,.btn-ho{width:100%;text-align:center;padding:12px}
+  .features{grid-template-columns:1fr}
+  .menu-grid{grid-template-columns:1fr}
+  .stat-num{font-size:20px}
+  .stat-card{padding:1rem .75rem}
+  .card{padding:.875rem .75rem}
+  nav{gap:4px}
+  .nav-links button{padding:5px 8px;font-size:11px}
+  .nav-logo img{width:34px;height:34px}
+  .logo-text{font-size:17px}
+  .order-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .order-table thead,.order-table tbody,.order-table th,.order-table td,.order-table tr{display:block}
+  .order-table thead tr{position:absolute;top:-9999px;left:-9999px}
+  .order-table tr{border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:10px;padding:8px}
+  .order-table td{border:none;padding:4px 8px;font-size:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+  .order-table td:before{content:attr(data-label);font-weight:600;color:var(--muted);font-size:11px;flex-shrink:0;min-width:70px}
+  .loc-done-btn{font-size:12px;padding:10px}
+  .plan-opts{grid-template-columns:1fr 1fr}
+  .pay-methods{grid-template-columns:1fr 1fr}
+  .dash-header > div .btn-sm,
+  .dash-header > div .btn-danger{font-size:11px;padding:6px 10px}
+  .menu-row-img{width:44px;height:44px}
+  .qty-btn{width:36px;height:36px;font-size:20px}
+}
 </style>
 </head>
 <body>
@@ -297,6 +368,28 @@ textarea{resize:vertical}
         <option>GT East legon</option>
         <option>Fishing Harbour</option>
         <option>Afko junction</option>
+        <option>Junction Mall</option>
+        <option>Middle East</option>
+        <option>Cocoboard Comm. 3</option>
+        <option>Cocoa Board Admin</option>
+        <option>Cocoa Board Monitoring</option>
+        <option>Cocoboard Research</option>
+        <option>Cocoboard Warehouse</option>
+        <option>Cocoboard Shipments</option>
+        <option>Long Room</option>
+        <option>Harbour Gate</option>
+        <option>Elwa Harbour</option>
+        <option>AMS Logistics</option>
+        <option>Prudential Bank Comm. 1</option>
+        <option>Amaris Yard</option>
+        <option>GT Comm. 6</option>
+        <option>Republic Bank Tema</option>
+        <option>Republic Bank Ashaiman</option>
+        <option>Flowitec Spintex</option>
+        <option>GRA Legon</option>
+        <option>Haatso</option>
+        <option>Imani Comm. 22</option>
+        <option>Comm. 25</option>
         <option value="others">Others (specify below)</option>
       </select>
       <div id="other-wrap" style="display:none;margin-top:8px"><input type="text" id="other-loc" placeholder="Type your current location"></div>
@@ -329,7 +422,7 @@ textarea{resize:vertical}
           <div class="payment-img-box"><img src="payment.png" alt="Payment Details"></div>
         </div>
         <div id="whatsapp-note" style="display:none">
-          <div class="whatsapp-note"><i class="ti ti-brand-whatsapp" style="font-size:20px;flex-shrink:0"></i><span>After payment, please send your proof of payment to <strong>0591556601</strong> on WhatsApp. Your order will be confirmed once payment is verified.</span></div>
+          <div class="whatsapp-note"><i class="ti ti-brand-whatsapp" style="font-size:20px;flex-shrink:0"></i><span>After payment, please send your proof of payment to <strong>0245590414/0244940156</strong> on WhatsApp. Your order will be confirmed once payment is verified.</span></div>
         </div>
         <div id="weekly-monthly-note" style="display:none">
           <div class="info-box orange" style="margin-top:10px;margin-bottom:0"><i class="ti ti-info-circle" style="flex-shrink:0;font-size:18px"></i><span>You have chosen a <strong id="plan-label-text"></strong> payment plan. A payment summary will be prepared for you at the end of the period.</span></div>
@@ -354,7 +447,7 @@ textarea{resize:vertical}
     <div>
       <h2 style="font-size:22px;color:var(--primary);margin-bottom:1.25rem">Get in touch</h2>
       <div class="contact-grid">
-        <div class="contact-card"><i class="ti ti-phone"></i><h4>Phone / WhatsApp</h4><p>0591156601<br>0244940156<br><span style="font-size:11px;color:#9CA3AF">Mon-Fri, 1 PM &ndash; 10:30 AM</span></p></div>
+        <div class="contact-card"><i class="ti ti-phone"></i><h4>Phone / WhatsApp</h4><p>0245590414/0244940156<br>0244940156<br><span style="font-size:11px;color:#9CA3AF">Mon-Fri, 1 PM &ndash; 10:30 AM</span></p></div>
         <div class="contact-card"><i class="ti ti-map-pin"></i><h4>Location</h4><p>Gbawe CP (Opposite Immanuel Methodist Church) / Tema Community 12<br>Accra, Ghana</p></div>
         <div class="contact-card"><i class="ti ti-clock"></i><h4>Order window</h4><p>Mon-Fri<br>1:00 PM &ndash; 10:30 AM<br><span style="font-size:11px;color:#9CA3AF">Orders reopen at 1 PM daily</span></p></div>
       </div>
@@ -483,7 +576,7 @@ const firebaseConfig = {
 var DASH_PASSWORD = 'esi2026'; // Change to your preferred password
 var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var FIXED_DAYS = [1,3,4]; // Mon=1, Wed=3, Thu=4
-var WA_OWNER = '233591556601';
+var WA_OWNER = '233245590414';
 
 // Order timing (Tema branch)
 // Open:  1:00 PM (13:00) Mon-Thu + Sun (for Mon advance orders)
@@ -872,7 +965,7 @@ function downloadReceiptHTML(cardId,name){
       rows+='<tr style="'+(bold?'border-top:2px solid #86EFAC;background:#e6f9ef':'')+'"><td style="padding:8px 14px;color:#166534;width:40%;font-weight:'+(bold?700:400)+'">'+spans[0].textContent+'</td><td style="padding:8px 14px;text-align:right;color:'+(bold?'#14532D':'#166534')+';font-weight:'+(bold?700:400)+'">'+spans[1].textContent+'</td></tr>';
     }
   });
-  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Esi\'s Kitchen (Tema) Receipt</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,serif;background:#f0fdf4;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px}.receipt{background:#fff;border:2px solid #86EFAC;border-radius:16px;max-width:420px;width:100%;overflow:hidden;box-shadow:0 8px 30px rgba(0,100,0,0.12)}.header{background:linear-gradient(135deg,#C0392B,#E67E22);padding:28px 24px;text-align:center}.logo{font-size:28px;margin-bottom:6px}.header h1{color:#fff;font-size:22px;margin-bottom:4px;letter-spacing:.5px}.header p{color:rgba(255,255,255,.85);font-size:13px}table{width:100%;border-collapse:collapse}tr:nth-child(even){background:#f8fffe}td{border-bottom:1px solid #d1fae5}.footer{text-align:center;padding:18px;font-size:12px;color:#166534;background:#f0fdf4;border-top:2px solid #86EFAC;line-height:1.8}@media print{.no-print{display:none}body{padding:0;background:#fff}}</style></head><body><div class="receipt"><div class="header"><div class="logo">\uD83C\uDF7D\uFE0F</div><h1>Esi\'s Kitchen (Tema)</h1><p>Official Order Receipt</p></div><table>'+rows+'</table><div class="footer"><strong>Thank you for your order!</strong><br>Gbawe CP / Tema Community 12, Accra, Ghana<br>\uD83D\uDCDE 0591156601 &nbsp;|&nbsp; 0244940156<br><em>Keep this receipt for your records</em></div></div><br class="no-print"><button class="no-print" onclick="window.print()" style="display:block;margin:0 auto;background:#C0392B;color:#fff;border:none;padding:12px 28px;font-size:14px;cursor:pointer;border-radius:8px;font-family:Georgia,serif">\uD83D\uDDA8\uFE0F Print Receipt</button></body></html>';
+  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Esi\'s Kitchen (Tema) Receipt</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,serif;background:#f0fdf4;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px}.receipt{background:#fff;border:2px solid #86EFAC;border-radius:16px;max-width:420px;width:100%;overflow:hidden;box-shadow:0 8px 30px rgba(0,100,0,0.12)}.header{background:linear-gradient(135deg,#C0392B,#E67E22);padding:28px 24px;text-align:center}.logo{font-size:28px;margin-bottom:6px}.header h1{color:#fff;font-size:22px;margin-bottom:4px;letter-spacing:.5px}.header p{color:rgba(255,255,255,.85);font-size:13px}table{width:100%;border-collapse:collapse}tr:nth-child(even){background:#f8fffe}td{border-bottom:1px solid #d1fae5}.footer{text-align:center;padding:18px;font-size:12px;color:#166534;background:#f0fdf4;border-top:2px solid #86EFAC;line-height:1.8}@media print{.no-print{display:none}body{padding:0;background:#fff}}</style></head><body><div class="receipt"><div class="header"><div class="logo">\uD83C\uDF7D\uFE0F</div><h1>Esi\'s Kitchen (Tema)</h1><p>Official Order Receipt</p></div><table>'+rows+'</table><div class="footer"><strong>Thank you for your order!</strong><br>Gbawe CP / Tema Community 12, Accra, Ghana<br>\uD83D\uDCDE 0245590414/0244940156 &nbsp;|&nbsp; 0244940156<br><em>Keep this receipt for your records</em></div></div><br class="no-print"><button class="no-print" onclick="window.print()" style="display:block;margin:0 auto;background:#C0392B;color:#fff;border:none;padding:12px 28px;font-size:14px;cursor:pointer;border-radius:8px;font-family:Georgia,serif">\uD83D\uDDA8\uFE0F Print Receipt</button></body></html>';
   var blob=new Blob([html],{type:'text/html'}); var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='EsisKitchen_Tema_Receipt_'+(name||'order')+'.html'; a.click();
 }
 
